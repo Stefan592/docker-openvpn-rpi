@@ -1,9 +1,10 @@
 # Original credit: https://github.com/jpetazzo/dockvpn
+# Additional credit: https://github.com/kylemanna/docker-openvpn
 
 # Smallest base image
-FROM alpine:3.4
+FROM armhf/alpine:3.4
 
-MAINTAINER Kyle Manna <kyle@kylemanna.com>
+MAINTAINER Andreas Lunderhage <lunderhage@users.noreply.github.com>
 
 RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community/" >> /etc/apk/repositories && \
     echo "http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
